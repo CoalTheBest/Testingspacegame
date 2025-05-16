@@ -1,32 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Space Energy Clicker with Prestige</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
 <body>
-  <!-- Your existing HTML content -->
-<div id="score">Energy: 0<div id="autoClickerCursors"></div></div>
-  <button id="clicker">Collect Space Energy!</button>
-  <div class="store">
-    <div class="upgrade" id="autoClickerBtn">Buy Spaceship (Cost: 50, Level: 0)</div>
-    <div class="upgrade" id="multiplierBtn">Buy Energy Beam (Cost: 20, Level: 1)</div>
-    <div class="upgrade" id="autoClickerSpeedBtn">Buy Solar Panel Speed (Cost: 200)</div>
-    <div class="prestige" id="prestigeBtn">Prestige (Requires 1000 Energy)</div>
+  <div class="game-container">
+    <h1>🚀 Space Clicker</h1>
+    <p>Clicks: <span id="click-count">0</span></p>
+    <button id="clicker-button">Collect Stardust</button>
   </div>
-  <div id="commandBar">
-    <button id="closeCommandBarButton">Close</button>
-    <input type="text" id="commandInput" placeholder="Enter secret command..." />
-    <button id="commandSubmit">Submit</button>
+
+  <button id="toggle-shop">🛒 Shop</button>
+
+  <div id="shop-panel" class="shop-panel">
+    <h2>Upgrades</h2>
+    <button id="auto-clicker-btn">Buy Auto Clicker (10)</button>
+    <p>Auto Clickers: <span id="auto-clickers">0</span></p>
   </div>
-  <button id="questionMarkButton">?</button>
-  <div id="notificationBox"></div>
-  <div id="commandNotificationBox"></div>
-  <!-- Include JavaScript files -->
-  <script src="shop.js"></script>
-  <script src="prestige.js"></script>
-  <script src="admin.js"></script>
+
+  <script src="game.js" defer></script>
 </body>
-</html>
