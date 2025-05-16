@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let clicks = 0;
   let autoClickers = 0;
+  let autoClickerPower = 1;
 
   const clickCountEl = document.getElementById("click-count");
   const clickerButton = document.getElementById("clicker-button");
@@ -32,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function autoClick() {
-    clicks += autoClickers;
+    clicks += autoClickers * autoClickerPower;
     updateUI();
   }
 
